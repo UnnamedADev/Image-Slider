@@ -1,0 +1,46 @@
+html, body {margin: 0; padding: 0; font-family: oswald; color: white;}
+
+header {
+    float: left; 
+    width: 100%; 
+    background: #333;
+    text-align: center;}
+
+nav {
+    float: left; 
+    width: 100%; 
+    background: #222; 
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;}
+
+section {
+    float: left; 
+    width: 100%; 
+    background: #333;}
+
+footer {
+    float: left; 
+    width: 100%; 
+    background: #222; 
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    text-align: center;
+    padding: 20px 0px;}
+footer ul > li > a {
+    color: white;
+}
+
+.menu, footer ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    text-transform: uppercase; 
+    font-variant: small-caps;}
+.menu > li {
+    float: left; 
+    padding: 14px 0px;}
+.menu > li > a {
+    padding: 14px 16px; 
+    color: white; 
+    text-decoration: none;}
+.menu > li > a:hover {background: orange; color: #222;}
