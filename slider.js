@@ -3,8 +3,8 @@
 $(document).ready(function(){
     
     //var
-    const refreshDuration = 3000;
-    const effectDuration = 200;
+    const refreshDuration = 7000;
+    const effectDuration = 1000;
     
     var elementsNumber;
     var sliderImages = [];
@@ -20,7 +20,8 @@ $(document).ready(function(){
     
     //fx
     function refreshSlider(pointer){
-
+        
+        moveBar();
         if(pointer==0){
             $(sliderImages[elementsNumber-1]).fadeOut(effectDuration, function(){
                 $(sliderImages[pointer]).fadeIn(effectDuration);
@@ -49,4 +50,15 @@ $(document).ready(function(){
         }
         elementsNumber = images.length;
     }
+    function moveBar(){
+        
+        var barHolder = document.getElementsByClassName("sliderBar")[0];
+        var barProgress = barHolder.getElementsByTagName("div")[0];
+        barProgress.style.width = "100%";
+        $(barProgress).stop();
+        $(barProgress).animate({
+            width: "0%"
+        },refreshDuration, "linear");
+    }
+
 });
