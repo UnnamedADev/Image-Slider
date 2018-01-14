@@ -43,5 +43,6 @@
     float: left;
     display: inline-block;
     margin: 0px 0px;
+    background: #fff1a5;
 }
-.activeCounter {background: #fcd15a;}
+.activeCounter {background: #fcd15a !important;}

@@ -1,4 +1,4 @@
-html, body {margin: 0; padding: 0; font-family: oswald; color: white;}
+html, body {margin: 0; padding: 0; font-family: oswald; color: white; background: #222;}
 
 header {
     float: left; 
@@ -13,10 +13,20 @@ nav {
     border-top: 1px solid #444;
     border-bottom: 1px solid #444;}
 
+aside {
+    float: left;
+    width: 15%;
+    padding-top: 1px;
+    }
 section {
+    box-sizing: border-box;
     float: left; 
-    width: 100%; 
-    background: #333;}
+    width: 70%; 
+    background: #2a2a2a;
+    padding: 10px 20px;
+    border-left: 1px solid #444;
+    border-right: 1px solid #444;}
+    
 
 footer {
     float: left; 
